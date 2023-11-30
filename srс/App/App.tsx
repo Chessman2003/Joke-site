@@ -1,8 +1,14 @@
 import React from "react";
-import Header from "./Components/Header/header";
-import "./Components/Header/header.scss"
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { 
+    BrowserRouter as Router, 
+    Route, 
+    Routes 
+} from "react-router-dom";
+
+import Header from "../Header/header";
+
 import Nav from "./Components/nav";
+
 import SherlockJoke from "./Components/Sherlock";
 import ShtirlitsJoke from "./Components/Shtirlits";
 import DeveloperJoke from "./Components/Developer";
@@ -20,9 +26,9 @@ const App = () => {
                     <Nav />
                     <Routes>
                         <Route path="/" element={<AllJokes />} />
-                        <Route path="/Shtirlits.tsx" element={<ShtirlitsJoke />} />
-                        <Route path="/Sherlock.tsx" element={<SherlockJoke />} />
-                        <Route path="/Developer.tsx" element={<DeveloperJoke />} />
+                        <Route path="/Shtirlits" element={<ShtirlitsJoke />} />
+                        <Route path="/Sherlock" element={<SherlockJoke />} />
+                        <Route path="/Developer" element={<DeveloperJoke />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </div>

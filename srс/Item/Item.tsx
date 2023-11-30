@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./item.scss";
 
 type Props = {
@@ -6,15 +7,14 @@ type Props = {
     text: string
 };
 
-const Item = ({title, text}: Props) => {
-    return(
+const Item = ({
+    title, 
+    text
+}: Props) => {
+    return (
         <div id="item">
-            <h2>
-                {title}
-            </h2>
-            <p>
-                {text}
-            </p>
+            <h2>{title}</h2>
+            <p>{text}</p>
         </div>
     )
 };
